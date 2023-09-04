@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+}
+
+nav {
+  display: flex;
+  padding-left: 30px;
+  padding-right: 30px;
+  background-color: blue;
+}
+
+.nav-element {
+  width: 25%;
+  text-align: center;
+  color: white;
+  padding: 10px;
+  text-decoration: none;
+  display: inline-block;
+  width: 100%;
+}
+
+.nav-element:hover {
+  background-color: blueviolet;
+}
+
+.entry-section {
+  background-image: url("bg-img.png");
+  background-repeat: no-repeat;
+  height: 95vh;
+  background-size: cover;
+  position: relative;
+}
+
+.wrapper{
+    position: absolute;
+    transform: translate(0%, 50%);
+    display: flex;
+    align-items:start;
+    justify-content: center;
+    gap: 70px;
+    width: 100%;
+}
+
+.entry-box {
+  background-color: white;
+  width: 25%;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 5px 2px white;
+  /* height: 60%; */
+  /* height: inherit; */
+}
+
+.entry-box h2 {
+  text-align: center;
+}
+
+.entry-box button {
+  background-color: blue;
+  color: white;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.field input {
+  width: 100%;
+  border-radius: 4px;
+  height: 30px;
+  padding: 15px 7px;
+  background-color: grey;
+  /* font-size: 18px; */
+}
+
+::placeholder {
+  color: black;
+}
+
+.field input:focus {
+  outline-color: blue;
+  background-color: white;
+}
